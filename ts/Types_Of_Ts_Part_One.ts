@@ -29,6 +29,6 @@ function playerMaker(name:string) : Player{
         name
     }
 }
-
+const playerAllow = (name:string) :Player => ({name})
 const nico = playerMaker("nico")
 nico.age = 12
