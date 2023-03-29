@@ -31,3 +31,22 @@ const dict =new Dict()
 
 dict.add(kimchi);
 dict.def("kimchi")
+
+
+class Word1 {
+    constructor(
+        public readonly term :string,
+        public readonly def : string
+    ) {
+    }
+}
+
+const kimchi1 = new Word('kimchi','한국의 음식')
+
+// kimchi.def = 'xxx'  readOnly
+
+class Dict1 {
+    static hello (){
+        return "hello"
+    }
+}
