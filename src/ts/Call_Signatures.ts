@@ -9,3 +9,5 @@ const add1 = (a:number,b:number) => {return a+b}
 type Add = (a:number,b:number) => number
 
 const add2:Add =(a,b) => a+b
+
+console.log('테스트')

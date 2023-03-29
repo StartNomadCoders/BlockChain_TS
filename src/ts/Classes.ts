@@ -23,9 +23,15 @@ abstract class User { // 추상클래스는 오직 다른 클래스 상속을 �
 }
 class Player1 extends User{
     getNictName() {
-        console.log(this.nickName) //protected는 해당 클래스내에서는 접근가능
+         console.log(this.nickName) //protected는 해당 클래스내에서는 접근가능
     }
 }
 const nico1 = new Player1("nico",'las','니꼬')
 // nico1.nickName protected는 해당 클래스내에서는 접근가능
 nico1.getFullName()
+nico1.getNictName()
+
+console.log('테스트'+nico1.getFullName()+123123)
+
+console.log('안녕하세요')
+console.log(nico1.getNictName())
