@@ -1,11 +1,11 @@
 {
   "scripts": {
     "build": "tsc",
-    "build:watch": "tsc -w",
-    "dev": "NODE_ENV=dev nodemon --watch src/ --delay 500ms --exec ts-node src/start.ts",
+    "build:watch": "node_modules/.bin/tsc -w",
+    "dev": "NODE_ENV=dev nodemon --watch src --delay 500ms --exec ts-node src/start.ts",
     "start:dev": "NODE_ENV=dev ts-node-dev --respawn --transpile-only src/start.ts",
     "start1": "NODE_ENV=production node build/start.js",
-    "watch": "tsc --watch",
+    "watch": "node_modules/.bin/tsc --watch",
     "start": "ts-node-dev"
   },
   "name": "typescript_blockchain",
