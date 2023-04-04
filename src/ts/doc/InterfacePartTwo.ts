@@ -51,3 +51,11 @@ function makeUser(user:User1){
         sayHi : (n)=> n
     }
 }
+
+const kimchi ={
+    맛있어 : true
+}
+
+type sss = {
+    str:boolean[]
+}
