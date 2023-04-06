@@ -82,3 +82,46 @@ const arr6:Arr5 = {
 
 console.log("slice: " +slice(['1','2','3','4','5'],1,4))
 console.log("arr5: " +arr5.slice())
+
+interface User1234 {
+    name : string
+    age : number
+}
+interface Common {
+    cyper: () => number[]
+}
+class Player1234 implements User1234,Common {
+    private code: number = 0
+    constructor(
+        public name: string,
+        public age : number
+    ){}
+
+    cyper = () => Array(this.age).fill(0).map((v,i)=> v+i)
+
+    runStart(){
+        const code = this.code
+        return `내이름은 : ${this.name}이고 ${this.age}살이다` +code
+    }
+
+    slow() {
+
+    }
+}
+
+abstract class Detail{ // 추상메서드는 인스턴스 생성불가
+    public slide :boolean = true
+
+    constructor(
+        public cash : number
+    ){}
+
+    static cashLove(){  //인스턴스를 생성하지않고도 Detail.cashLove() 로불러들일수있다.
+        return "난 돈이좋아"
+    }
+}
+
+//const d = new Detail(1) //Cannot create an instance of an abstract class.
+const y = new Player1234('sungchoel',1)
+console.log(y.runStart()+ y.cyper()+Detail.cashLove())
+
