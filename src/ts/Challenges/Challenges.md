@@ -26,6 +26,22 @@
 - bulkAdd: 다음과 같은 방식으로. 여러개의 단어를 한번에 추가할 수 있게 해줌. [{term:"김치", definition:"대박이네~"}, {term:"아파트", definition:"비싸네~"}]
 - bulkDelete: 다음과 같은 방식으로. 여러개의 단어를 한번에 삭제할 수 있게 해줌. ["김치", "아파트"]
 
+***
+#### Everything, everywhere all at once!!
+##### Challenge goals:
+
+Your task is to translate the JSDoc comments of the following files to Typescript Type Declarations.
+여러분들의 목표는 다음 JSDoc 파일들의 주석 부분들을 타입스크립트 타입 정의로 바꾸는 것입니다.
+- head.js: https://github.com/lodash/lodash/blob/master/head.js
+- hasIn.js: https://github.com/lodash/lodash/blob/master/hasIn.js
+- isBoolean.js: https://github.com/lodash/lodash/blob/master/isBoolean.js
+- toString.js: https://github.com/lodash/lodash/blob/master/toString.js
+- split.js: https://github.com/lodash/lodash/blob/master/split.js
+- hasPath.js: https://github.com/lodash/lodash/blob/master/hasPath.js
+- filter.js: https://github.com/lodash/lodash/blob/master/filter.js
+- every.js: https://github.com/lodash/lodash/blob/master/every.js
+- map.js: https://github.com/lodash/lodash/blob/master/map.js
+함수를 실행시키는 것까지 하실 필요는 없습니다. 타입 정의만 만드시면 충분합니다.
 <br>
 <br>
 <br>
